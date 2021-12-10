@@ -16,8 +16,7 @@ for i in range(len(list_of_cubes)):
         number //= 10
     if sum_digits % 7 == 0:
         sum_numbers_a += list_of_cubes[i]
-        print(list_of_cubes[i])
-print(sum_numbers_a)
+print('Ответ для 2.а: ', sum_numbers_a)
 
 # К каждому элементу списка добавить 17 и заново вычислить сумму тех чисел из этого списка,
 # сумма цифр которых делится нацело на 7.
@@ -31,5 +30,4 @@ for i in range(len(list_of_cubes)):
         number //= 10
     if sum_digits % 7 == 0:
         sum_numbers_b += (list_of_cubes[i] + 17)
-        print(list_of_cubes[i] + 17)
-print(sum_numbers_b)
+print('Ответ для 2.b*: ', sum_numbers_b)
