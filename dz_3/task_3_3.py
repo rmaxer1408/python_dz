@@ -7,11 +7,16 @@
 #     "М": ["Мария"],
 #     "П": ["Петр"]
 # }
-#
-#
-# Подумайте: полезен ли будет вам оператор распаковки? Как поступить, если потребуется сортировка по ключам?
-# Можно ли использовать словарь в этом случае?
 
 
 def thesaurus(*args):
-    pass
+    """args in dict"""
+    dict_name = {}
+    for i in range(len(args)):
+        key = args[i][0]
+        val = list(filter(lambda name: name.startswith(key), args))
+        dict_name.setdefault(key, val)
+    print(dict_name)
+
+
+thesaurus("Иван", "Мария", "Петр", "Илья")
