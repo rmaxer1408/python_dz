@@ -16,7 +16,7 @@ def thesaurus(*args):
         key = args[i][0]
         val = list(filter(lambda name: name.startswith(key), args))
         dict_name.setdefault(key, val)
-    print(dict_name)
+    return dict_name
 
 
-thesaurus("Иван", "Мария", "Петр", "Илья")
+print(thesaurus("Иван", "Мария", "Петр", "Илья"))
