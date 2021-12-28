@@ -17,7 +17,7 @@ spammer_count = sorted(count_dict.values(), reverse=True)[0]
 for i, k in count_dict.items():
     if k == spammer_count:
         print(f'Spammer: {i}, number of requests: {k}')
-        break;
+        break
 
 
 

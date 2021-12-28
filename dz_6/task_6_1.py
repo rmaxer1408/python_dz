@@ -11,6 +11,7 @@
 ]
 """
 from requests import utils, get
+import pprint
 
 response = get('https://github.com/elastic/examples/raw/master/Common%20Data%20Formats/nginx_logs/nginx_logs')
 encodings = utils.get_encoding_from_headers(response.headers)
@@ -22,4 +23,4 @@ with open('nginx_logs.txt', 'r', encoding='utf-8') as f:
     for line in f:
         a = line.split()
         src_list.append((a[0], a[5][1:], a[6]))
-print(src_list)
+pprint.pprint(src_list)
