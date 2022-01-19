@@ -31,4 +31,4 @@ def email_parse(e_addr):
         raise ValueError(f'wrong email: {e_addr}')
 
 
-print(email_parse('rmnosipov@gmail.com'))
+print(email_parse('someone@geekbrains.ru'))
